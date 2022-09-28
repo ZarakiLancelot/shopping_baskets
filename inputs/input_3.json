@@ -2,21 +2,25 @@
 	{
 		"quantity": 1,
 		"name": "Imported bottle of perfume",
-		"price": 27.99
+		"price": 27.99,
+		"productType": 3
 	},
 	{
 		"quantity": 1,
 		"name": "Bottle of perfume",
-		"price": 18.99
+		"price": 18.99,
+		"productType": 1
 	},
 	{
 		"quantity": 1,
 		"name": "Packet of headache pills",
-		"price": 9.75
+		"price": 9.75,
+		"productType": 2
 	},
 	{
 		"quantity": 3,
 		"name": "Box of imported chocolates",
-		"price": 11.25
+		"price": 11.25,
+		"productType": 3
 	}
 ]

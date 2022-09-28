@@ -2,11 +2,13 @@
 	{
 		"quantity": 1,
 		"name": "Imported box of chocolates",
-		"price": 10.00
+		"price": 10.00,
+		"productType": 3
 	},
 	{
 		"quantity": 1,
 		"name": "Imported bottle of perfume",
-		"price": 47.50
+		"price": 47.50,
+		"productType": 3
 	}
 ]
