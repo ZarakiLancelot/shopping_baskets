@@ -2,16 +2,19 @@
 	{
 		"quantity": 2,
 		"name": "Book",
-		"price": 12.49
+		"price": 12.49,
+		"productType": 2
 	},
 	{
 		"quantity": 1,
 		"name": "Music CD",
-		"price": 14.99
+		"price": 14.99,
+		"productType": 1
 	},
 	{
 		"quantity": 1,
 		"name": "Chocolate Bar",
-		"price": 0.85
+		"price": 0.85,
+		"productType": 2
 	}
 ]
