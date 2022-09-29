@@ -3,24 +3,28 @@
 		"quantity": 1,
 		"name": "Imported bottle of perfume",
 		"price": 27.99,
-		"productType": 3
+		"exempt": false,
+		"imported": true
 	},
 	{
 		"quantity": 1,
 		"name": "Bottle of perfume",
 		"price": 18.99,
-		"productType": 1
+		"exempt": false,
+		"imported": false
 	},
 	{
 		"quantity": 1,
 		"name": "Packet of headache pills",
 		"price": 9.75,
-		"productType": 2
+		"exempt": true,
+		"imported": false
 	},
 	{
 		"quantity": 3,
 		"name": "Box of imported chocolates",
 		"price": 11.25,
-		"productType": 3
+		"exempt": true,
+		"imported": true
 	}
 ]

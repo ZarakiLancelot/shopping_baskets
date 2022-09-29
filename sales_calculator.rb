@@ -1,27 +1,37 @@
 require 'json'
 require_relative 'receipt'
+require_relative 'product'
 
 class SalesCalculator
 	def greeting
-		puts "===========================Welcome to the TORC Sales Calculator!==========================="
+		puts "=============================Welcome to the TORC Sales/Tax Calculator!============================="
 	end
 
-	def start
+	def main
 		greeting
+		
 		puts "Please enter the number of the file you would like to calculate the sales tax for."
 		input_case = gets.chomp.to_i
-
-		if input_case > 0 && input_case < 4
+		
+		if (1..3).include?(input_case)
+			puts "="*100
+			puts "OUTPUT: #{input_case}"
+			puts "="*100
 			file = File.read("inputs/input_#{input_case}.json")
-			data_hash = JSON.parse(file)
-
-			Receipt.print_receipt(data_hash)
+			input_data = JSON.parse(file)
+			
+			receipt = Receipt.new
+			input_data.each do |product|
+				@product = Product.new(product["name"], product["price"], product["quantity"], product["exempt"], product["imported"])
+				receipt.add_to_receipt(@product)
+			end
+			receipt.print_receipt
 		else
 			puts "Oops! That's not a valid input. Please try again with numbers between 1 and 3."
-			start
+			main
 		end
 	end
 end
 
 sales_calculator = SalesCalculator.new
-sales_calculator.start
+sales_calculator.main
